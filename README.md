@@ -40,6 +40,7 @@ For each fold, and for each tokenization scheme, the models were trained on the 
 # Results
 
 Now, how did everything stack up? Overall, the transformer with the overlapping 3-mer tokens performed best, and so for the rest of the results, we will focus on that tokenization scheme. However, for the other two tokenization schemes, the smaller and simpler LSTM actually outperformed the transformer. Below is a table that captures all of those results (in **bold** are the best results for that tokenization scheme; in ***bold and underlined*** are the best results overall).
+
 | Tokenization scheme      | Model       | Top 1  | Top 3  | Top 5  | Top 10 | Top 20 | Mean true rank | Median true rank |
 | ----------------- | ----------- | ------ | ------ | ------ | ------ | ------ | -------------- | ---------------- |
 | Non-overlapping   | Transformer | 0.0541 | 0.1372 | 0.2079 | 0.3546 | 0.5720 | 20.81          | **17**               |
