@@ -2,7 +2,7 @@
 *Summary of "Next-3-mer Ranking using Short Contexts in *E. coli*", as presented at MLMI 2026, by Dylan Lewis, Madelyn Forrest, Madelin Stueck, and Gurjit Randhawa*
 
 <p align="center">
-  <img id="fig:graphical-abstract" src="https://github.com/user-attachments/assets/dc83137b-8461-44bc-bed6-94627708ec2f"alt="Graphical Abstract: summary of 3-mer ranking pipeline" width="80%">
+  <img id="fig:graphical-abstract" src="https://github.com/user-attachments/assets/dc83137b-8461-44bc-bed6-94627708ec2f" alt="Graphical Abstract: summary of 3-mer ranking pipeline" width="80%">
   <br>
   <em><strong>Figure 1:</strong> Graphical abstract summarizing the methodology of our study.</em>
 </p>
@@ -62,7 +62,7 @@ As we can see, the Transformer and LSTM outperform the 1D CNN consistently. Thes
 We then subtracted the test-frequency baseline from these curves, in order to visualize just how much these models outperformed the best possible baseline, as shown in [Figure 2(b)](#fig:top-n-acc). For the LSTM and transformer, they by far do the best at the top 20 mark, scoring nearly 20% above that baseline.
 
 <p align="center">
-  <img id="fig:top-n-acc" src="https://github.com/user-attachments/assets/f88915f2-cd82-4ea4-996c-dee040eb7491"alt="Top-N accuracy curves" width="80%">
+  <img id="fig:top-n-acc" src="https://github.com/user-attachments/assets/f88915f2-cd82-4ea4-996c-dee040eb7491" alt="Top-N accuracy curves" width="80%">
   <br>
   <em><strong>Figure 2:</strong> Top-N accuracy curves.</em>
 </p>
@@ -70,7 +70,7 @@ We then subtracted the test-frequency baseline from these curves, in order to vi
 We also visualized where the four models ranked the true label for each test case, as shown in [Figure 3](#fig:rank_distribution). While the Markov model shows a roughly equal distribution of the true label amongst its predictions, the neural models consistently predict the true label to be in a higher rank. 
 
 <p align="center">
-  <img id="fig:rank_distribution" src="https://github.com/user-attachments/assets/8eb22676-63bc-4c9c-a41a-8cfab7a5abae"alt="Rank distribution" width="80%">
+  <img id="fig:rank_distribution" src="https://github.com/user-attachments/assets/8eb22676-63bc-4c9c-a41a-8cfab7a5abae" alt="Rank distribution" width="80%">
   <br>
   <em><strong>Figure 3:</strong> Distribution of true 3-mer rank.</em>
 </p>
@@ -82,7 +82,7 @@ We generated this 'barcode' image from the actual E. coli sequence, as you can s
 In [Figure 4](#fig:true_fcgr) is the fCGR for *E. coli*, for frequency 3. The relative amount of each 3-mer in that sequence is represented by the darkness of that box. In this fCGR, the most and least frequent 3-mers were denoted with white text. This image corresponds to the fCGR for *E. coli*, for frequency 3. 
 
 <p align="center">
-  <img id="fig:true_fcgr" src="https://github.com/user-attachments/assets/917672ae-a260-474b-95e2-34e5321aa665" width="80%">
+  <img id="fig:true_fcgr" src="https://github.com/user-attachments/assets/917672ae-a260-474b-95e2-34e5321aa665" alt="True fCGR of E. coli" width="80%">
   <br>
   <em><strong>Figure 4:</strong> Ground truth fCGR (k = 3), three most and least occurring 3-mers labelled.</em>
 </p>
@@ -90,7 +90,7 @@ In [Figure 4](#fig:true_fcgr) is the fCGR for *E. coli*, for frequency 3. The re
 We can actually create a similar map for each of the models, using their top 1 predictions. Ideally, even if the models aren’t predicting the right 3-mer each time, they might be able to recreate this image, meaning that they have learned about the global distribution of the 3-mers. We did this, as shown in [Figure 5](#fig:pred_fcgrs). As we can see, all of the models did poorly on this. However, the CNN, and especially the Markov model, did the worst. 
 
 <p align="center">
-  <img id="fig:pred_fcgrs" src="https://github.com/user-attachments/assets/556080bc-75b0-4c41-963d-88406ce5f7f4" width="80%">
+  <img id="fig:pred_fcgrs" src="https://github.com/user-attachments/assets/556080bc-75b0-4c41-963d-88406ce5f7f4" alt="Predicted fCGRs of models" width="80%">
   <br>
   <em><strong>Figure 5:</strong> The fCGRs (k = 3) formed from the predictions of the four models, three most and least occurring 3-mers labelled.</em>
 </p>
@@ -98,7 +98,7 @@ We can actually create a similar map for each of the models, using their top 1 p
 We then subtracted the ground truth map from the prediction maps to yield these difference map. Here, a lighter colour is better, as these difference maps capture error, with green representing overpredictions and red representing underpredictions. These are shown in [Figure 6](#fig:diff_fcgrs). We also turned these maps into values by taking the normalized sum of the absolute values in each box, with 1 being the worst, and 0 being perfect. These are shown by the “SAE” (sum of absolute error) values at the top figure.
 
 <p align="center">
-  <img id="fig:diff_fcgrs" src="https://github.com/user-attachments/assets/bdfb7fe8-6515-4fa5-ba3b-e877f2d7d3d6" width="80%">
+  <img id="fig:diff_fcgrs" src="https://github.com/user-attachments/assets/bdfb7fe8-6515-4fa5-ba3b-e877f2d7d3d6" alt="Difference maps between true and predicted fCGRs" width="80%">
   <br>
   <em><strong>Figure 6:</strong> Difference maps between the ground truth and fCGR (k = 3) and the fCGRs formed from model predictions, three most overpredicted and three most underpredicted 3-mers labelled.</em>
 </p>
@@ -147,7 +147,7 @@ As for the limitations of our work (and thus, some of the areas where we plan to
 [28] Çiğdem Köroğlu, Peng Chen, Michael Traurig, Serdar Altok, Clifton Bogardus, et al. De Novo Genome Assemblies From Two Indigenous Americans from Arizona Identify New Polymorphisms in Non-Reference Sequences. Genome Biology and Evolution 16, 9 (2024), evae188. \
 [29] Stephan Solis-Reyes. DNA sequence classification: It’s easier than you think: An open-source k-mer based machine learning tool for fast and accurate classification of a variety of genomic datasets. Master’s thesis, The University of Western Ontario (2018), 5792.
 
-### Q&A:
+# Q&A:
 
 **Question**: Could you go over the Top-*N* accuracy and rank a bit more?
 
