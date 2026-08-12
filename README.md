@@ -1,5 +1,5 @@
 # MLMI-2026-Next-3-mer-Ranking-using-Short-Contexts-in-E.-coli
-*Summary of "Next-3-mer Ranking using Short Contexts in *E. coli*", as presented at MLMI 2026, by Dylan Lewis, Madelyn Forrest, Madelin Stueck, and Gurjit Randhawa*
+*Summary of "Next-3-mer Ranking using Short Contexts in E. coli", by Dylan Lewis, Madelyn Forrest, Madelin Stueck, and Gurjit Randhawa, as presented at MLMI 2026*
 
 <p align="center">
   <img id="fig:graphical-abstract" src="https://github.com/user-attachments/assets/dc83137b-8461-44bc-bed6-94627708ec2f" alt="Graphical Abstract: summary of 3-mer ranking pipeline" width="80%">
