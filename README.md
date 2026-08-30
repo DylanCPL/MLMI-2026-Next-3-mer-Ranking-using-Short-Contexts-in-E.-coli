@@ -2,7 +2,7 @@
 *Summary of "Next-3-mer Ranking using Short Contexts in E. coli", by Dylan Lewis, Madelyn Forrest, Madelin Stueck, and Gurjit Randhawa, as presented at MLMI 2026*
 
 <p align="center">
-  <img id="fig:graphical-abstract" src="https://github.com/user-attachments/assets/dc83137b-8461-44bc-bed6-94627708ec2f" alt="Graphical Abstract: summary of 3-mer ranking pipeline" width="80%">
+  <img id="fig:graphical-abstract" src="https://github.com/user-attachments/assets/b6fdc171-f245-4c99-8d84-b80173f77650" alt="Graphical Abstract: summary of 3-mer ranking pipeline" width="80%">
   <br>
   <em><strong>Figure 1:</strong> Graphical abstract summarizing the methodology of our study.</em>
 </p>
